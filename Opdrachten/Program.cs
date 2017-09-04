@@ -10,6 +10,7 @@ namespace Opdrachten
 
             bixby.gaNaarBestemming(5);
             bixby.gaNaarBestemming(10);
+            bixby.zetRichting(9);
             bixby.gaNaarBestemming(0);
             bixby.gaNaarBestemming(-5);
 

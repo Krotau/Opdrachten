@@ -8,6 +8,7 @@ namespace Opdrachten
         private int links = -1;
         private int rechts = 1;
 
+        // constructor, geeft melding dat nieuwe robot is gemaakt en zet plaats en richting naar lokale variabele in huidige context
         public Robot(int richting = 0, int plaats = 0)
         {
             Console.WriteLine("Thank you for creating me! I will be a good robot. :D");
@@ -38,7 +39,7 @@ namespace Opdrachten
         // verander de richting na eigen keuze
         public void zetRichting(int keuze)
         {
-            if (keuze > links || keuze < rechts)
+            if (keuze >= links && keuze <= rechts)
             {
                 richting = keuze;
                 Console.WriteLine("Ik heb mijn richting naar {0} gezet! :D", richting);
@@ -52,6 +53,8 @@ namespace Opdrachten
         // verplaats de robot naar de bestemming
         public void gaNaarBestemming(int bestemming)
         {
+            Console.WriteLine("Ik ga mij nu naar {0} toe! :D", bestemming);
+
             if (bestemming < plaats)
             {
                 zetRichting(links);
