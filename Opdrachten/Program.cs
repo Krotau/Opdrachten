@@ -6,13 +6,13 @@ namespace Opdrachten
     {
         static void Main(string[] args)
         {
-            Robot bixby = new Robot();
+            Robot Bixby = new Robot();
 
-            bixby.gaNaarBestemming(5);
-            bixby.gaNaarBestemming(10);
-            bixby.zetRichting(9);
-            bixby.gaNaarBestemming(0);
-            bixby.gaNaarBestemming(-5);
+            Bixby.gaNaarBestemming(5);
+            Bixby.gaNaarBestemming(10);
+            Bixby.zetRichting(9);
+            Bixby.gaNaarBestemming(0);
+            Bixby.gaNaarBestemming(-5);
 
         }
     }

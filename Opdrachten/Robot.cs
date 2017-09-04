@@ -3,12 +3,14 @@ namespace Opdrachten
 {
     public class Robot
     {
+        // declarations
         private int plaats;
         private int richting;
         private int links = -1;
         private int rechts = 1;
 
-        // constructor, geeft melding dat nieuwe robot is gemaakt en zet plaats en richting naar lokale variabele in huidige context
+        // constructor, geeft melding dat nieuwe robot is gemaakt
+        // zet plaats en richting naar lokale variabele in huidige context
         public Robot(int richting = 0, int plaats = 0)
         {
             Console.WriteLine("Thank you for creating me! I will be a good robot. :D");
@@ -46,7 +48,7 @@ namespace Opdrachten
             }
             else
             {
-                Console.WriteLine("Ingegeven keuze valt buiten het domein van de beschreven van mijn gebruikersinstructies. :c");
+                Console.WriteLine("Iets verkeerd ingegeven. :c");
             }
         }
 
