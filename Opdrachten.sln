@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_1_Robot", "Opdrachten\Opdracht_week_1_Robot.csproj", "{5E925F03-7977-4563-A3E5-3030A8882F5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_1_Notebook", "Opdracht_week_1_Notebook\Opdracht_week_1_Notebook.csproj", "{3E0E5428-591A-456A-B012-2BD17C65AF2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{5E925F03-7977-4563-A3E5-3030A8882F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E925F03-7977-4563-A3E5-3030A8882F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E925F03-7977-4563-A3E5-3030A8882F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E0E5428-591A-456A-B012-2BD17C65AF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0E5428-591A-456A-B012-2BD17C65AF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0E5428-591A-456A-B012-2BD17C65AF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0E5428-591A-456A-B012-2BD17C65AF2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
