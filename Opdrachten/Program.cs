@@ -1,10 +1,11 @@
 ﻿using System;
 namespace Main
 {
-    public class Program
-    {
-        public Program()
-        {
-        }
-    }
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("Hello World!");
+		}
+	}
 }
