@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Opdracht_week_1_Notebook
 {
-    public class ArrayList : System.Collections.CollectionBase
+    public class ArrayList : System.Collections.CollectionBase // hiermee inherit je de basis lijst functionaliteit op
     {
         // declarations
         public string name;
@@ -11,7 +11,7 @@ namespace Opdracht_week_1_Notebook
         // constructor
         public ArrayList()
         {
-            Console.WriteLine("You just created a fabulous ArrayList, feel amazing!");
+            Console.WriteLine("You just created a fabulous ArrayList, feel amazing!\n");
         }
 
         // Voeg iets toe aan array list
@@ -22,15 +22,17 @@ namespace Opdracht_week_1_Notebook
         }
 
         // verwijder een index in de lijst
+        // komt overeen met de removeat() methode dat inherit is
         public void remove(int index)
         {
             if (index > Count - 1 || index < 0) // magische getallen anders doen
             {
-                Console.WriteLine("Sorry, die bestaat niet!");
+                Console.WriteLine("Sorry, die bestaat niet!\n");
             }
             else
             {
                 List.RemoveAt(index);
+                Console.WriteLine("Ik heb notitie {0} verwijderd\n", index+1);
             }
         }
     }

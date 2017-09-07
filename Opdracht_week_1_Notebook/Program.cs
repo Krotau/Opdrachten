@@ -6,7 +6,8 @@ namespace Opdracht_week_1_Notebook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // maak een notiteboek
+            Notebook Notitieboek = new Notebook();
         }
     }
 }
