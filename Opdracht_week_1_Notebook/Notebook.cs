@@ -9,28 +9,37 @@ namespace Opdracht_week_1_Notebook
         // constructor
         public Notebook()
         {
-            voegDataToe();
+            voegDataToe("ik ben 1");
+            voegDataToe("ik ben 2");
+            voegDataToe("ik ben 3");
+            voegDataToe("ik ben 4");
+
             printeAlleNotities();
-            verwijderTweedeNotitie();
+
+            totaalAantalNotities();
+
+            verwijderNotitie(2);
+
             printeAlleNotities();
 
-            Console.WriteLine(totaalAantalNotities());
-            Console.WriteLine(showNote());
+            voegDataToe("ik ben 5");
+
+            showNote(3);
         }
 
-        private string showNote()
+        private void showNote(int nummer)
         {
-            return "nog niet geimplementeerd";
+            Console.WriteLine(notes.laatNotitieZien(nummer)); 
         }
 
-        private int totaalAantalNotities()
+        private void totaalAantalNotities()
         {
-            return notes.Count;
+            Console.WriteLine(notes.showTotal());
         }
 
-        private void verwijderTweedeNotitie()
+        private void verwijderNotitie(int index)
         {
-            notes.remove(1);
+            notes.remove(index);
         }
 
         private void printeAlleNotities()
@@ -41,12 +50,9 @@ namespace Opdracht_week_1_Notebook
             }
         }
 
-        private void voegDataToe()
+        private void voegDataToe(string note)
         {
-            notes.add("Dit is mijn eerste notitie!");
-            notes.add("Dit is mijn tweede notitie!");
-            notes.add("Dit is mijn derde notitie!");
-            notes.add("Dit is mijn vierde notitie!\n");
+            notes.add(note);
         }
 
 

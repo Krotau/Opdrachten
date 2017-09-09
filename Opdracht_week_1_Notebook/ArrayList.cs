@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Opdracht_week_1_Notebook
 {
-    public class ArrayList : System.Collections.CollectionBase // hiermee inherit je de basis lijst functionaliteit op
+    public class ArrayList : System.Collections.CollectionBase// hiermee inherit je de basis lijst functionaliteit op
     {
         // declarations
         public string name;
@@ -14,11 +14,23 @@ namespace Opdracht_week_1_Notebook
             Console.WriteLine("You just created a fabulous ArrayList, feel amazing!\n");
         }
 
+        internal string showTotal()
+        {
+            string rv = "Total number of notes is " + List.Count.ToString() + "\n";
+            return rv;
+        }
+
         // Voeg iets toe aan array list
         // List is beschikbaar in context omdat ArrayList dit van CollectionBase heef inherit
         public void add(string note)
         {
             List.Add(note);
+        }
+
+        internal string laatNotitieZien(int notitieNummer)
+        {
+            string rv = "The returned note: " + List[notitieNummer].ToString() + "\n";
+            return rv;
         }
 
         // verwijder een index in de lijst
