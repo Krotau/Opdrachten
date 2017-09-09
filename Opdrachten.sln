@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_1_Notebook", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_1_Robot", "Opdracht_week_1_Robot\Opdracht_week_1_Robot.csproj", "{F243BD73-8371-45FC-8A42-313DBF082061}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_1_Dambord", "Opdracht_week_1_Dambord\Opdracht_week_1_Dambord.csproj", "{D51EBAF7-1385-4244-8EF9-FACAD2C21712}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{F243BD73-8371-45FC-8A42-313DBF082061}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F243BD73-8371-45FC-8A42-313DBF082061}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F243BD73-8371-45FC-8A42-313DBF082061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51EBAF7-1385-4244-8EF9-FACAD2C21712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51EBAF7-1385-4244-8EF9-FACAD2C21712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51EBAF7-1385-4244-8EF9-FACAD2C21712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51EBAF7-1385-4244-8EF9-FACAD2C21712}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

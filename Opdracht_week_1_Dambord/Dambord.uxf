@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>340</y>
+      <w>230</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>:Dambord
+--
+- steen : int
+--
++ Dambord(int steen=1)
++ zetSteen(int posistie): void
++ toonRechts(): void
++ toonLinks(): void
++ toonOnder(): void
++ toonBoven(): void
++ toonRechtsBoven(): void
++ toonRechtsOnder(): void
++ toonLinksBoven(): void
++ toonLinksOnder: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
