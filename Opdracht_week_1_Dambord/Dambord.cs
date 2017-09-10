@@ -5,25 +5,45 @@ namespace Opdracht_week_1_Dambord
     {
         // Declarations
         private int steen;
+        private int dambord;
 
-        public Dambord(int steen = 1)
+        public Dambord(int steen = 1, int dambord = 100)
         {
             this.steen = steen;
+            this.dambord = dambord;
+
+            // testen
+            zetSteen(15);
+            toonRechts();
+            toonLinks();
+            toonOnder();
+            toonBoven();
+            toonLinksBoven();
+            toonLinksOnder();
+            toonRechtsBoven();
+            toonRechtsOnder();
         }
 
 
         // Steen informatie methodes
         internal void zetSteen(int positie)
         {
-            throw new NotImplementedException();
+            if (positie > 0 && positie <= 100)
+            {
+                steen = positie;
+            }
+            else
+            {
+                Console.WriteLine("Buiten bereik!");
+            }
         }
 
         internal void toonRechts()
         {
-			if (steen % 10 != 0)
-			{
-				Console.WriteLine(steen + 1);
-			}
+            if (steen % 10 != 0)
+            {
+                Console.WriteLine(steen + 1);
+            }
             else
             {
                 foutmelding();
@@ -32,19 +52,31 @@ namespace Opdracht_week_1_Dambord
 
         internal void toonLinks()
         {
-            if (steen != 1 || steen % 11 != 0){
+            if (steen != 1 || steen % 11 != 0)
+            {
                 Console.WriteLine(steen - 1);
+            }
+            else
+            {
+                foutmelding();
             }
         }
 
         internal void toonBoven()
         {
-            throw new NotImplementedException();
+            if (steen > 10){
+                Console.WriteLine(steen - 10);
+            }
+            else{
+                foutmelding();
+            }
         }
 
         internal void toonOnder()
         {
-            throw new NotImplementedException();
+            if (steen <= 90){
+                Console.WriteLine(steen + 10);
+            }
         }
 
         internal void toonRechtsBoven()
@@ -67,10 +99,10 @@ namespace Opdracht_week_1_Dambord
             throw new NotImplementedException();
         }
 
-		// als iets niet kan wat opgevangen is
-		private void foutmelding()
-		{
-			throw new NotImplementedException();
-		}
+        // als iets niet kan wat opgevangen is
+        private void foutmelding()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

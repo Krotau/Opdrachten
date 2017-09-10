@@ -4,16 +4,19 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>340</y>
-      <w>230</w>
-      <h>210</h>
+      <x>580</x>
+      <y>260</y>
+      <w>330</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>:Dambord
 --
+
 - steen : int
+
 --
-+ Dambord(int steen=1)
+
++ Dambord(int steen=1, int dambord=100)
 + zetSteen(int posistie): void
 + toonRechts(): void
 + toonLinks(): void
@@ -22,7 +25,36 @@
 + toonRechtsBoven(): void
 + toonRechtsOnder(): void
 + toonLinksBoven(): void
-+ toonLinksOnder: void</panel_attributes>
++ toonLinksOnder: void
+</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>300</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>:Meldingen
+--
+
+--
+
+- foutmelding(): void
+- controleerZelf(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>350</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
   </element>
 </diagram>

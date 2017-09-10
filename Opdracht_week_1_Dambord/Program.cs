@@ -6,7 +6,7 @@ namespace Opdracht_week_1_Dambord
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Dambord Dambord = new Dambord();
         }
     }
 }
