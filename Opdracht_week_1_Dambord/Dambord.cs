@@ -1,27 +1,23 @@
 ﻿using System;
 namespace Opdracht_week_1_Dambord
 {
-    public class Dambord
+    public class Dambord : Meldingen
     {
-        // Declarations
+        // Declarations, globaal bekend binnen deze klassen
         private int steen;
-        private int dambord;
+        private int size;
 
-        public Dambord(int steen = 1, int dambord = 100)
+        public Dambord(int steen = 1, int size = 100)
         {
-            this.steen = steen;
-            this.dambord = dambord;
+			this.steen = steen;
+			this.size = size;
 
-            // testen
-            zetSteen(15);
-            toonRechts();
-            toonLinks();
-            toonOnder();
-            toonBoven();
-            toonLinksBoven();
-            toonLinksOnder();
-            toonRechtsBoven();
-            toonRechtsOnder();
+            zetSteen(randint.Next(1, 101));
+            Console.WriteLine("Dambord met grootte: {0}", this.size);
+            Console.WriteLine("Positie steen: {0} \n", this.steen);
+            Console.WriteLine("object: {0} \n", this.ToString());
+
+            printAlles();
         }
 
 
@@ -30,7 +26,7 @@ namespace Opdracht_week_1_Dambord
         {
             if (positie > 0 && positie <= 100)
             {
-                steen = positie;
+                this.steen = positie;
             }
             else
             {
@@ -38,6 +34,20 @@ namespace Opdracht_week_1_Dambord
             }
         }
 
+        internal void printAlles()
+        {
+            toonLinksBoven();
+            toonBoven();
+            toonRechtsBoven();
+            toonLinks();
+            Console.WriteLine(steen);
+            toonRechts();
+            toonLinksOnder();
+            toonOnder();
+            toonRechtsOnder();
+        }
+
+        // positie print methodes
         internal void toonRechts()
         {
             if (steen % 10 != 0)
@@ -64,45 +74,74 @@ namespace Opdracht_week_1_Dambord
 
         internal void toonBoven()
         {
-            if (steen > 10){
+            if (steen > 10)
+            {
                 Console.WriteLine(steen - 10);
             }
-            else{
+            else
+            {
                 foutmelding();
             }
         }
 
         internal void toonOnder()
         {
-            if (steen <= 90){
+            if (steen <= 90)
+            {
                 Console.WriteLine(steen + 10);
+            }
+            else
+            {
+                foutmelding();
             }
         }
 
         internal void toonRechtsBoven()
         {
-            throw new NotImplementedException();
+            if (steen > 10 && steen % 10 != 0)
+            {
+                Console.WriteLine(steen - 9);
+            }
+            else
+            {
+                foutmelding();
+            }
         }
 
         internal void toonRechtsOnder()
         {
-            throw new NotImplementedException();
+            if (steen < 90 && steen % 10 != 0)
+            {
+                Console.WriteLine(steen + 11);
+            }
+            else
+            {
+                foutmelding();
+            }
         }
 
         internal void toonLinksBoven()
         {
-            throw new NotImplementedException();
+            if (steen > 10 && steen % 11 != 0)
+            {
+                Console.WriteLine(steen - 11);
+            }
+            else
+            {
+                foutmelding();
+            }
         }
 
         internal void toonLinksOnder()
         {
-            throw new NotImplementedException();
-        }
-
-        // als iets niet kan wat opgevangen is
-        private void foutmelding()
-        {
-            throw new NotImplementedException();
+            if (steen < 90 && steen % 11 != 0)
+            {
+                Console.WriteLine(steen + 9);
+            }
+            else
+            {
+                foutmelding();
+            }
         }
     }
 }
