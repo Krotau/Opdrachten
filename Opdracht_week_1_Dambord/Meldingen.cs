@@ -7,7 +7,6 @@ namespace Opdracht_week_1_Dambord
 
         public Meldingen()
         {
-            Console.WriteLine("Maak ik dan ook een melding aan?");
         }
 
         // als iets niet kan wat opgevangen is
