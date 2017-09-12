@@ -5,31 +5,63 @@ namespace Opdracht_week_2_Dambord_1_steen
     {
         // Declarations
         private int steen;
-        private int size;
+        private int[] steenInfo;
+        private readonly int size;
         private int[,] dambord;
 
-        public Dambord(int steen = 1, int size = 3)
+        // Constructor
+        public Dambord(int steen = 23, int size = 5)
         {
             this.steen = steen;
             this.size = size;
 
-            maakDambord();
+            MaakDambord();
+            steenInfo = ZoekSteenPositie();
         }
 
-        public void maakDambord()
+        // maakt het dambord, duh
+        public void MaakDambord()
         {
-            dambord = new int[size+1, size];
-
-            foreach (var layer in dambord)
+            this.dambord = new int[this.size, this.size];
+            int iterator = 0;
+            for (int laag = 0; laag < size; laag++)
             {
-                Console.WriteLine(layer);
+                for (int positie = 0; positie < size; positie++)
+                {
+                    this.dambord[laag, positie] = iterator; iterator++;
+                }
+
             }
+
         }
 
-        // Methodes voor bepalen positie steen
-        public void toonRechts()
+        // dambord kent alleen getal, niet de plek in het twee dimensionaal array 'dambord'
+        public int[] ZoekSteenPositie()
         {
-            throw new NotImplementedException();
+            int iterator = 0;
+            int[] rv = new int[2];
+
+            for (int laag = 0; laag < size; laag++)
+            {
+                for (int positie = 0; positie < size; positie++)
+                {
+                    if (dambord[laag, positie] == this.steen)
+                    {
+                        rv[0] = laag;
+                        rv[1] = positie;
+                        return rv;
+                    }
+                    else
+                    {
+                        iterator++;
+                    }
+
+                }
+
+            }
+            return rv;
         }
+        // Methodes voor bepalen positie steen
     }
+
 }
