@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_1_Dambord", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_2_Dambord_1_steen", "Opdracht_week_2_Dambord_1_steen\Opdracht_week_2_Dambord_1_steen.csproj", "{534C9BE7-438F-498F-9BA3-D69D2A9D8D62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_2_Dambord_2_stenen", "Opdracht_week_2_Dambord_2_stenen\Opdracht_week_2_Dambord_2_stenen.csproj", "{9A20D5E2-0065-42AE-A2C3-066507A52B2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,5 +39,9 @@ Global
 		{534C9BE7-438F-498F-9BA3-D69D2A9D8D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{534C9BE7-438F-498F-9BA3-D69D2A9D8D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{534C9BE7-438F-498F-9BA3-D69D2A9D8D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A20D5E2-0065-42AE-A2C3-066507A52B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A20D5E2-0065-42AE-A2C3-066507A52B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A20D5E2-0065-42AE-A2C3-066507A52B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A20D5E2-0065-42AE-A2C3-066507A52B2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

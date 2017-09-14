@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
+      <x>560</x>
       <y>260</y>
       <w>330</w>
       <h>280</h>
@@ -42,6 +42,7 @@
 
 --
 
++ meldingen()
 - foutmelding(): void
 - controleerZelf(): void</panel_attributes>
     <additional_attributes/>
@@ -51,10 +52,10 @@
     <coordinates>
       <x>470</x>
       <y>350</y>
-      <w>130</w>
+      <w>110</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
   </element>
 </diagram>
