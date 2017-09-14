@@ -4,16 +4,9 @@ namespace Opdracht_week_2_Dambord_1_steen
     public class Dambord : EigenInvulling
     {
         // Declarations
-        private int steen;
+        private readonly int steen;
         private readonly int size;
-        private int linksboven;
-        private int boven;
-        private int rechtsboven;
-        private int links;
-        private int rechts;
-        private int linksonder;
-        private int onder;
-        private int rechtsonder;
+
 
         // Constructor
         public Dambord(int steen = 4, int size = 3)

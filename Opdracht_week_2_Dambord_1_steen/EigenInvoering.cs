@@ -4,8 +4,16 @@ namespace Opdracht_week_2_Dambord_1_steen
     public class EigenInvulling
     {
         // declarations
-        internal int[,] dambord;
-        internal int[] coordinaten;
+        protected int[,] dambord;
+        protected int[] coordinaten;
+		protected int linksboven;
+		protected int boven;
+		protected int rechtsboven;
+		protected int links;
+		protected int rechts;
+		protected int linksonder;
+		protected int onder;
+		protected int rechtsonder;
 
         public EigenInvulling()
         {

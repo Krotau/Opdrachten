@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_2_Dambord_1_s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_week_2_Dambord_2_stenen", "Opdracht_week_2_Dambord_2_stenen\Opdracht_week_2_Dambord_2_stenen.csproj", "{9A20D5E2-0065-42AE-A2C3-066507A52B2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht_les", "Opdracht_les\Opdracht_les.csproj", "{B7E7A813-0324-4B85-B3AF-27B407608BD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,5 +45,9 @@ Global
 		{9A20D5E2-0065-42AE-A2C3-066507A52B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A20D5E2-0065-42AE-A2C3-066507A52B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A20D5E2-0065-42AE-A2C3-066507A52B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E7A813-0324-4B85-B3AF-27B407608BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E7A813-0324-4B85-B3AF-27B407608BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E7A813-0324-4B85-B3AF-27B407608BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E7A813-0324-4B85-B3AF-27B407608BD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
