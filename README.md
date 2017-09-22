@@ -1,4 +1,4 @@
 # Opdrachten
 Opdrachten voor de b2d1 inleveropdrachten
 
-Kijk mama, dit is veranderd!
+Gebruik dit als referentie materiaal, niet om over te schrijven
